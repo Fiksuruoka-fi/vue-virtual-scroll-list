@@ -986,7 +986,8 @@
                   scopedSlots: itemScopedSlots
                 },
                 style: itemStyle,
-                "class": "".concat(itemClass).concat(this.itemClassAdd ? ' ' + this.itemClassAdd(index) : '')
+                "class": "".concat(itemClass).concat(this.itemClassAdd ? ' ' + this.itemClassAdd(index) : ''),
+                key: uniqueKey
               }));
             } else {
               console.warn("Cannot get the data-key '".concat(dataKey, "' from data-sources."));

@@ -303,7 +303,8 @@ const VirtualList = Vue.component('virtual-list', {
                 scopedSlots: itemScopedSlots
               },
               style: itemStyle,
-              class: `${itemClass}${this.itemClassAdd ? ' ' + this.itemClassAdd(index) : ''}`
+              class: `${itemClass}${this.itemClassAdd ? ' ' + this.itemClassAdd(index) : ''}`,
+              key: uniqueKey
             }))
           } else {
             console.warn(`Cannot get the data-key '${dataKey}' from data-sources.`)
