@@ -249,6 +249,7 @@ const VirtualList = Vue.component('virtual-list', {
     // here is the rerendering entry
     onRangeChanged (range) {
       this.range = range
+      this.$emit('range-change', range)
     },
 
     onScroll (evt) {

@@ -923,6 +923,7 @@
       // here is the rerendering entry
       onRangeChanged: function onRangeChanged(range) {
         this.range = range;
+        this.$emit('range-change', range);
       },
       onScroll: function onScroll(evt) {
         var offset = this.getOffset();
